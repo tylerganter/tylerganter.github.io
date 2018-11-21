@@ -12,20 +12,8 @@ freezer = Freezer(app)
 
 @app.route('/')
 def home():
-    landing = """
-    something a little different
-    About Me
+    return render_template('home.html')
 
-website source code
-
-projects
-    pokemon
-
-linkedIn
-gitHub
-google scholar
-kaggle
-
-travel blog
-    """
-    return landing
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
