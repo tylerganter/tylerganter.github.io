@@ -1,17 +1,30 @@
 {% extends "template.html" %}
 {% block content %}
 
-<!--this is a comment tag-->
 
-<p>Welcome to my website!</p>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Tyler Ganter</h1>
+  <p>DSP and Machine Learning Engineer | Not a UX Designer</p>
+</div>
 
-<!--About Me-->
+<div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>About Me</h2>
+            <div class="fakeimg">Fake Image</div>
+        </div>
+        <div class="col-sm-8">
+            <p>here I am!</p>
+            <p>Resume</p>
+        </div>
 
-<a href="https://www.linkedin.com/in/tylerganter">LinkedIn</a>
-<a href="https://github.com/tylerganter">GitHub</a>
-<a href="https://scholar.google.com/citations?user=cU2WkQ4AAAAJ&hl=en&oi=ao">Google Scholar</a>
-<a href="https://www.kaggle.com/tylerganter">Kaggle</a>
+    </div>
+</div>
 
-<a href="http://gnarwall.org">Travel Blog</a>
+<!--Services-->
+
+<div class="container" style="margin-top:30px">
+    <a href="https://gnarwall.org">Travel Blog</a>
+</div>
 
 {% endblock %}
