@@ -1,35 +1,47 @@
 {% extends "template.html" %}
 {% block content %}
 
-
-<div class="jumbotron text-center" style="margin-bottom:0">
+<section id="intro">
+<div class="intro-content">
+<!--<div>-->
   <h1>Tyler Ganter</h1>
   <p>DSP and Machine Learning Engineer | Not a UX Designer</p>
 </div>
+</section>
 
-<div class="container" style="margin-top:30px">
+<section id="about">
+<div class="container about-content" style="margin-top:30px">
     <div class="row">
         <div class="col-sm-4">
-            <h2>About Me</h2>
-            <div class="fakeimg">
-                <img src="{{ url_for('static', filename='images/hampi.jpg') }}"
-                     style="width:200px;height:300px;"
-                     alt="Profile Picture">
-            </div>
-
+            <!--<div class="fakeimg">-->
+                <!--<img src="{{ url_for('static',
+                filename='images/standing_profile.jpg')
+                }}"-->
+                     <!--style="width:200px;height:300px;"-->
+                     <!--alt="Profile Picture">-->
+            <!--</div>-->
         </div>
         <div class="col-sm-8">
-            <p>here I am!</p>
-            <p>Resume</p>
+            <h2>About Me</h2>
+            <p>Hello! I'm a Digital Signal Processing (DSP) and Machine
+                Learning engineer who is passionate about learning and
+                thinking creatively to solve challenging problems.</p>
+            <p>I think there is amazing potential to reshape the world with
+                AI and I am dedicated to make this a positive impact. I want
+                to become an expert in this field and in deploying fast
+                solutions to people who can really benefit from it.</p>
+            <p>When I'm not at my computer I'm likely climbing, break dancing
+                or sharing experiences with the inhabitants of a different time
+                zone.</p>
+
+            <a href="{{ url_for('static', filename='assets/tyler_ganter_resume.pdf') }}">
+                resume</a>
         </div>
 
     </div>
 </div>
+</section>
 
 <!--Services-->
-
-<div class="container" style="margin-top:30px">
-    <a href="https://gnarwall.org">Travel Blog</a>
-</div>
 
 {% endblock %}
