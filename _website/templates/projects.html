@@ -1,9 +1,40 @@
 {% extends "template.html" %}
 {% block content %}
 
-<p><a href="https://github.com/tylerganter/tylerganter.github.io">Source code for this website</a></p>
+<section>
+<div class="side-page-content">
+<div class="row">
+    <div class="col-sm-6">
+        <a href="https://github.com/tylerganter/DeepLearning">
+            DeepLearning</a>
+    </div>
 
-<p><a href="https://my-gcp-website.appspot.com/">Pokemon</a></p>
+    <div class="col-sm-6">
+        <img src="{{ url_for('static', filename='images/deep_learning_loss.png') }}"
+        style="width:500px;height:400px;"
+        alt="Training Losses">
+    </div>
+</div>
+</div>
+</section>
 
+<section>
+<div class="side-page-content">
+<div class="row">
+    <div class="col-sm-6">
+        <a href="https://github.com/tylerganter/tylerganter.github.io">
+        Source code for this website</a>
+        <p>This site is built with Flask and then frozen using Frozen-Flask to
+            serve a static website.</p>
+    </div>
+
+    <div class="col-sm-6">
+        <img src="{{ url_for('static', filename='images/logo.png') }}"
+        style="width:200px;height:200px;"
+        alt="logo">
+    </div>
+</div>
+</div>
+</section>
 
 {% endblock %}

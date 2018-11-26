@@ -17,3 +17,7 @@ def home():
 @app.route('/projects/')
 def projects():
     return render_template('projects.html')
+
+@app.route('/publications/')
+def publications():
+    return render_template('publications.html')

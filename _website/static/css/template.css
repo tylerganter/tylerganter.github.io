@@ -4,7 +4,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #site-navbar {
-    background: #000000;
+    background: #101020;
 }
 
 /*
@@ -16,7 +16,7 @@
 	display: table;
 	width: 100%;
     height: 100px;
-    background: #000000;
+    background: #101020;
 }
 footer {
 	font-size: 1.4rem;
@@ -63,7 +63,7 @@ footer .footer-social li a {
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #intro {
-	background: #000000 url(../images/harmonic_pitch_alpha_2.png) no-repeat;
+	background: #101020 url(../images/harmonic_pitch_alpha_2.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	/*background-size: 100% 100%;*/
@@ -120,16 +120,44 @@ footer .footer-social li a {
     display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-    color: white;
+    color: #101020;
     font-size: 1.rem;
 	font-weight: bold;
     font-family: Andale Mono, monospace;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
 }
 
-.about-content a {
-    font-size: 1.5rem;
-    color: #500000;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0);
+.about-content a, .about-content a:visited {
+	font-size: 1.5rem;
+    color: #101020;
+}
+.about-content a:hover, .about-content a:focus {
+	color: #0099ff;
 }
 
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * side pages
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+#side-page {
+}
+.side-page-content {
+    min-height: 360px;
+    background: #101020;
+}
+
+.side-page-content {
+	font-size: 1.4rem;
+	font-family: Andale Mono, monospace;
+}
+.side-page-content a, .side-page-content a:visited {
+	color: #85898c;
+}
+.side-page-content a:hover, .side-page-content a:focus {
+	color: #bdc0c1;
+}
+
+.side-page-content p {
+	color: #bdc0c1;
+	font-size: 0.9rem;
+}
