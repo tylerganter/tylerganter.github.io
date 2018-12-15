@@ -21,5 +21,6 @@ FREEZER_DESTINATION = PROJECT_ROOT
 # we need to set the BASE_URL to the correct url as per GH Pages' standards
 FREEZER_BASE_URL = "http://localhost/{0}".format(REPO_NAME)
 
-# IMPORTANT: If this is True, all app files will be deleted when you run the freezer
+# IMPORTANT: If this is True, all app files will be
+# deleted when you run the freezer
 FREEZER_REMOVE_EXTRA_FILES = False
