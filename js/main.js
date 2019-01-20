@@ -41,7 +41,7 @@ function swipeSquiggles() {
 	  		clearInterval(id);
 		} else {
 			$("#animation").css("background-size", widthPercent-- + "% 100%");
-			$("#intro-content-wrapper").css("opacity", 1.0 - (widthPercent / 100) ** 0.2);
+			$("#intro-content-wrapper").css("opacity", 1.0 - (widthPercent / 100) ** 0.5);
 		}
 	}
 }
