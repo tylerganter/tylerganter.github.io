@@ -9,6 +9,17 @@ onLoad = function() {
 }
 
 
+// TODO find the proper way to make webpages consistent 
+// 		across browsers and devices
+function tempFix() {
+	var windowWidth = window.innerWidth
+					   || document.documentElement.clientWidth
+					   || document.body.clientWidth;
+
+	$("body").width(windowWidth);
+}
+
+
 // set the height to align with the size of the browser window
 function setIntroHeight() {
 	var windowHeight = window.innerHeight 
