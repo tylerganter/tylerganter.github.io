@@ -50,6 +50,12 @@
 	margin-right: auto;
 }
 
+#animation {
+	background: url(../static/images/empty.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
 
 /*
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +63,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #about {
-	background: #999999 url(../static/images/standing_profile.jpg)
+	background: #999999 url(../static/images/standing_profile.jpg);
 	no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;

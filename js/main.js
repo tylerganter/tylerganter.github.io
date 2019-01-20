@@ -1,18 +1,25 @@
 onLoad = function() {
-	document.getElementById("about-me").innerHTML = "This is pure javascript!";
-	// document.getElementById("about-me").src = "resources/aboutme.html"
-
+	// document.getElementById("about-me").innerHTML = "This is pure javascript!";
 	// $("#about-me").text("This was set with jQuery!");
-	// $("#about-me").load( "resources/aboutme.html" );
+	// $("#about-me").html("<h1>This is jQuery that overwrote the HTML</h1>");
 
-	// var xhr = typeof XMLHttpRequest != 'undefined' 
-	// 		? new XMLHttpRequest() 
-	// 		: new ActiveXObject('Microsoft.XMLHTTP');
-	// xhr.open('get', 'resources/aboutme.html', true);
-	// xhr.onreadystatechange = function() {
-	//     if (xhr.readyState == 4 && xhr.status == 200) { 
-	//         document.getElementById("about-me").innerHTML = xhr.responseText;
-	//     } 
-	// }
-	// xhr.send();
+	swipeSquiggles();
+}
+
+
+// Animate on load to have squiggles swipe in
+function swipeSquiggles() {
+	var elem = document.getElementById("animation");
+
+	var widthPercent = 100;
+  	
+  	var id = setInterval(frame, 20);
+	
+	function frame() {
+		if (widthPercent < 0) {
+	  		clearInterval(id);
+		} else {
+			elem.style.backgroundSize = widthPercent-- + "% 100%";
+		}
+	}
 }
