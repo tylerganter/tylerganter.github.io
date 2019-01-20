@@ -21,13 +21,15 @@
           href="static/images/favicon.png"
           type="image/ong">
 
+    <!-- My CSS and JS -->
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 </head>
-<body>
+<body onload="onLoad();">
 
 <header>
 <nav class="navbar navbar-expand-sm navbar-dark" id="site-navbar">
@@ -74,26 +76,8 @@
 <section id="about">
 <div class="container about-content" style="margin-top:30px">
     <div class="row">
-        <div class="col-sm-6">
-
-        </div>
-        <div class="col-sm-4">
-            <h2>About Me</h2>
-            <p>Hello! I'm a Digital Signal Processing (DSP) and Machine
-                Learning engineer who is passionate about learning and
-                thinking creatively to solve challenging problems.</p>
-            <p>I think there is amazing potential to reshape the world with
-                AI and I am dedicated to make this a positive impact. I want
-                to become an expert in this field and in deploying fast
-                solutions to people who can really benefit from it.</p>
-            <p>When I'm not at my computer I'm likely climbing, break dancing
-                or sharing experiences with the inhabitants of a different time
-                zone.</p>
-
-            <a href="static/assets/tyler_ganter_resume.pdf">
-                resume</a>
-        </div>
-
+        <div class="col-sm-6"></div>
+        <div class="col-sm-4" id="about-me"></div>
     </div>
 </div>
 </section>
