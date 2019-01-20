@@ -14,7 +14,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #intro {
-	background: #101020 url(../static/images/harmonic_pitch_alpha_2.png) no-repeat;
+	background: #101020 url(../static/images/harmonic_pitch_alpha.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	/*background-size: 100% 100%;*/
@@ -50,6 +50,12 @@
 	margin-right: auto;
 }
 
+#animation {
+	background: url(../static/images/empty.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
 
 /*
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +63,7 @@
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #about {
-	background: #999999 url(../static/images/standing_profile.jpg)
+	background: #999999 url(../static/images/standing_profile.jpg);
 	no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
