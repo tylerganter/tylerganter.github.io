@@ -63,7 +63,7 @@ footer .footer-social li a {
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #intro {
-	background: #101020 url(../images/harmonic_pitch_alpha_2.png) no-repeat;
+	background: #101020 url(../static/images/harmonic_pitch_alpha_2.png) no-repeat;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	/*background-size: 100% 100%;*/
@@ -104,7 +104,7 @@ footer .footer-social li a {
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #about {
-	background: #999999 url(../images/standing_profile.jpg)
+	background: #999999 url(../static/images/standing_profile.jpg)
 	no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
