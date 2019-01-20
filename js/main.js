@@ -25,7 +25,7 @@ function swipeSquiggles() {
 
 	var widthPercent = 100;
   	
-  	var id = setInterval(frame, 20);
+  	var id = setInterval(frame, 15);
 	
 	function frame() {
 		if (widthPercent < 0) {
