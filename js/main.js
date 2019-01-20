@@ -32,8 +32,6 @@ function setIntroHeight() {
 
 // Animate on load to have squiggles swipe in
 function swipeSquiggles() {
-	var elem = document.getElementById("animation");
-
 	var widthPercent = 100;
   	
   	var id = setInterval(frame, 15);
@@ -42,7 +40,8 @@ function swipeSquiggles() {
 		if (widthPercent < 0) {
 	  		clearInterval(id);
 		} else {
-			elem.style.backgroundSize = widthPercent-- + "% 100%";
+			$("#animation").css("background-size", widthPercent-- + "% 100%");
+			$("#intro-content-wrapper").css("opacity", 1.0 - (widthPercent / 100) ** 0.5);
 		}
 	}
 }

@@ -13,4 +13,9 @@ __pycache__
 .project
 .pydevproject
 
+# Jekyll Local Development
+Gemfile.lock
+_site/*
+
 js/learning.js
+
