@@ -1,134 +1,146 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <title>Tyler Ganter | AI Engineer</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="portfolio website">
-    <meta name="author" content="Tyler Ganter">
+  <title>Tyler Ganter | AI Engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tyler Ganter, AI Engineer.">
+  <meta name="author" content="Tyler Ganter">
 
-    <!-- MaxCDN Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- MaxCDN Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- Bootstrap 4 (unchanged, though you may consider upgrading to v5) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
-    <link rel="shortcut icon"
-          href="static/images/favicon.png"
-          type="image/png">
-    <link rel="icon"
-          href="static/images/favicon.png"
-          type="image/ong">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="static/images/favicon.png" type="image/png">
+  <link rel="icon" href="static/images/favicon.png" type="image/png">
 
-    <!-- My CSS and JS -->
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+  <!-- Icon libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
 </head>
+
 <body onload="onLoad();">
-
-<header>
-<nav class="navbar navbar-expand-sm navbar-dark" id="site-navbar">
-    <a class="navbar-brand" href="/">
-        <img src="static/images/logo.png"
-             style="width:64px;height:64px;">
-    </a>
-
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar">
+  <!-- ============ HEADER ============ -->
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="site-navbar">
+      <a class="navbar-brand" href="#">
+        <!-- Optional simpler brand or logo -->
+        <img src="static/images/logo.png" style="width:48px;height:48px;" alt="Tyler Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
-    </button>
+      </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="/projects/">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"
-                   href="/publications/">Publications</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" target="_blank"
-                   href="https://gnarwall.org">Travel Blog</a>
-            </li>
+      <!-- Collapse content (empty or minimal text if desired) -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <!-- Potentially keep a simple "Home" or no items at all -->
         </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ SECTION 1: INTRO ============ -->
+  <section id="intro">
+    <div class="intro-content" id="animation">
+      <div id="intro-content-wrapper">
+        <h1>Tyler Ganter</h1>
+        <p>AI Engineer</p>
+      </div>
     </div>
-</nav>
-</header>
+  </section>
 
+  <!-- ============ SECTION 2: ABOUT (HEADSHOT & BLURB) ============ -->
+  <section id="about">
+    <div class="container about-content">
+      <div class="row align-items-center justify-content-center">
+        <!-- Headshot: left column -->
+        <div class="col-md-4 text-center mb-4">
+          <img src="static/images/headshot.jpg" alt="Tyler headshot" class="img-fluid rounded shadow-sm" id="headshot">
+        </div>
 
-<section id="intro">
-<div class="intro-content" id="animation">
-<div id="intro-content-wrapper">
-  <h1>Tyler Ganter</h1>
-  <p>AI Engineer</p>
-</div>
-</div>
-</section>
-
-
-<section id="about">
-<div class="container about-content" style="margin-top:30px">
-    <div class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-4" id="about-me">
+        <!-- Blurb: right column -->
+        <div class="col-md-6" id="about-me">
           <h2>About Me</h2>
           <p>
-              Hello! I'm an AI engineer who is passionate about learning and
-              thinking creatively to solve challenging problems.
+            Hello! I'm an AI engineer who is passionate about using creativity and machine intelligence 
+            to solve challenging problems. I'm dedicated to making AI a positive force in the world 
+            and love to explore new ways of improving people’s lives with data and smart technology.
           </p>
           <p>
-              I think there is amazing potential to reshape the world with
-              AI and I am dedicated to make this a positive impact. I want
-              to become an expert in this field and in deploying fast
-              solutions to people who can really benefit from it.
+            Outside of work, I can usually be found climbing, break dancing, or traveling off-the-beaten-path. 
+            I also enjoy blogging about my travels and my experiences exploring new cultures.
           </p>
           <p>
-              When I'm not at my computer I'm likely climbing, break dancing
-              or sharing experiences with the inhabitants of a different time
-              zone.
+            <a href="static/assets/tyler_ganter_resume.pdf" class="btn btn-outline-dark">Download My Resume</a>
           </p>
-          <a href="static/assets/tyler_ganter_resume.pdf">
-              resume
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3: LINKS & CONTACT ============ -->
+  <section id="links">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col">
+          <h2>Connect with Me</h2>
+          <p>Feel free to reach out or explore my work at any of the following links:</p>
+        </div>
+      </div>
+
+      <!-- Professional links row -->
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-sm-2">
+          <a href="mailto:tyler.h.ganter@gmail.com" class="btn btn-primary btn-block">
+            <i class="fa fa-envelope"></i> Email
           </a>
         </div>
+        <div class="col-sm-2">
+          <a href="https://www.linkedin.com/in/tylerganter" target="_blank" class="btn btn-outline-dark btn-block">
+            <i class="fa fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://github.com/tylerganter" target="_blank" class="btn btn-outline-dark btn-block">
+            <i class="fa fa-github"></i> GitHub
+          </a>
+        </div>
+        <div class="col-sm-2">
+          <a href="https://scholar.google.com/citations?user=cU2WkQ4AAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-outline-dark btn-block">
+            <i class="ai ai-google-scholar"></i> Scholar
+          </a>
+        </div>
+      </div>
+
+      <!-- Personal links row (travel blog, MP, etc.) -->
+      <div class="row justify-content-center text-center">
+        <div class="col-sm-3">
+          <a href="https://gnarwall.org" target="_blank" class="btn btn-outline-secondary btn-block">
+            <i class="fa fa-plane"></i> 2017 Travel Blog
+          </a>
+        </div>
+        <div class="col-sm-3">
+          <a href="https://www.mountainproject.com/user/200438128/tyler-ganter" target="_blank" class="btn btn-outline-secondary btn-block">
+            <img src="static/images/mountain-project-logo-no-border.png" alt="" style="height: 1.2em; margin-right: 5px;"> Mountain Project
+          </a>
+        </div>
+      </div>
     </div>
-</div>
-</section>
+  </section>
 
-
-<footer id="site-footer">
-<div class="footer-content">
-    <!--<div>Designed & built by Tyler Ganter 2018</div>-->
-<div class="row">
-    <div class="col-sm-6 footer-email">
-        <a href="mailto:tyler.h.ganter@gmail.com">tyler.h.ganter@gmail.com</a>
+  <!-- ============ FOOTER ============ -->
+  <footer id="site-footer">
+    <div class="footer-content">
+      <p class="mb-0">© 2025 Tyler Ganter</p>
     </div>
-
-    <div class="col-sm-6 social">
-        <ul class="footer-social">
-          <li><a href="https://www.linkedin.com/in/tylerganter">
-              <i class="fa fa-linkedin"></i>
-          </a></li>
-          <li><a href="https://github.com/tylerganter">
-              <i class="fa fa-github"></i>
-          </a></li>
-          <li><a href="https://scholar.google.com/citations?user=cU2WkQ4AAAAJ&hl=en&oi=ao">
-              <i class="ai ai-google-scholar"></i>
-          </a></li>
-        </ul>
-    </div>
-</div>
-</div>
-</footer>
-
+  </footer>
 </body>
 </html>

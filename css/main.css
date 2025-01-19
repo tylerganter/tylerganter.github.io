@@ -1,189 +1,148 @@
 /*
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * navbar
+ * GENERAL RESET / BODY STYLES
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
-#site-navbar {
-    background: #101020;
-}
-
-
-/*
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * intro
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-#intro {
-	background: #101020 url(../static/images/harmonic_pitch_alpha.png) no-repeat;
-	/*-webkit-background-size: 100% 100%;*/
-	/*-moz-background-size: cover;*/
-	/*-moz-min-height: 720px;*/
-	/*background-size: 100% 100%;*/
-	display: block;
+ body {
+	margin: 0;
+	padding: 0;
+	font-family: "Andale Mono", "Courier New", monospace;
+	color: #101020;
+	background-color: #ffffff;
+  }
+  h1, h2, h3, p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+  }
+  a {
+	text-decoration: none;
+  }
+  
+  /*
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   * NAVBAR
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  #site-navbar {
+	background: #101020;
+  }
+  .navbar-brand img {
+	max-width: 48px;
+  }
+  .navbar-nav .nav-link {
+	color: #f0f0f0;
+  }
+  .navbar-nav .nav-link:hover {
+	color: #cccccc;
+  }
+  
+  /*
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   * INTRO SECTION
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  #intro {
+	background: #101020 url("../static/images/harmonic_pitch_alpha.png") no-repeat;
 	background-size: cover;
 	background-position: left bottom;
 	width: 100%;
-    /*height: 100%;*/
-    height: 720px;
+	height: 720px; /* Or auto/100vh to be more responsive */
 	display: table;
 	position: relative;
 	text-align: center;
-	overflow:hidden;
-}
-.intro-content {
-    display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-    color: white;
-    font-size: 1.5rem;
-	font-weight: bold;
-    font-family: Courier New, monospace;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
-    /*transform: translateY(-15rem)*/
-}
-.intro-content h1 {
-	font-family: Andale Mono, monospace;
-	line-height: 1.071;
-	font-size: 4rem;
-	font-weight: bold;
-	max-width: 900px;
-	margin-top: 0;
-	margin-bottom: .6rem;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#animation {
-	background: url(../static/images/empty.png) no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-}
-#intro-content-wrapper {
-    opacity: 0.0;
-}
-
-
-/*
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * about
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-#about {
-	background: #999999 url(../static/images/standing_profile.jpg);
-	no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	width: 100%;
-    height: 100%;
-	min-height: 720px;
-	display: table;
-	position: relative;
-	text-align: center;
-}
-.about-content {
-    display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-    color: #101020;
-    font-size: 1.rem;
-	font-weight: bold;
-    font-family: Andale Mono, monospace;
-}
-
-.about-content a, .about-content a:visited {
-	font-size: 1.5rem;
-    color: #101020;
-}
-.about-content a:hover, .about-content a:focus {
-	color: #0099ff;
-}
-
-
-/*
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * footer
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-#site-footer {
-	display: table;
-	width: 100%;
-    height: 100px;
-    background: #101020;
-}
-footer {
-	font-size: 1.4rem;
-	font-family: Andale Mono, monospace;
-}
-footer a, footer a:visited {
-	color: #85898c;
-}
-footer a:hover, footer a:focus {
-	color: #bdc0c1;
-}
-footer .social {
-	text-align: right;
-}
-footer .footer-social {
-	display: inline-block;
-	font-size: 2.1rem;
-	position: relative;
-	top: 0.5rem;
-	right: 3rem;
-}
-footer .footer-email {
-	position: relative;
-	text-align: left;
-	top: 1rem;
-	left: 3rem;
-}
-footer .footer-content {
+	overflow: hidden;
+  }
+  .intro-content {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-}
-footer .footer-social li {
-	display: inline-block;
-	margin: 0 12px;
-	padding: 0;
-}
-footer .footer-social li a {
-	color: #FFFFFF;
-}
-
-
-/*
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * side pages
- * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-#side-page {
-}
-.side-page-content {
-    min-height: 360px;
-    background: #101020;
-}
-
-.side-page-content {
-	font-size: 1.4rem;
-	font-family: Andale Mono, monospace;
-}
-.side-page-content a, .side-page-content a:visited {
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+  }
+  .intro-content h1 {
+	font-size: 4rem;
+	line-height: 1.2;
+	margin-bottom: 0.6rem;
+  }
+  #intro-content-wrapper {
+	opacity: 0.0; /* fade in from 0 to 1 */
+  }
+  #animation {
+	background: url("../static/images/empty.png") no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+  }
+  
+  /*
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   * ABOUT SECTION
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  #about {
+	padding: 60px 0;
+	background-color: #f7f7f7; /* Light background for contrast */
+  }
+  .about-content {
+	color: #101020;
+	font-weight: normal;
+  }
+  #headshot {
+	max-width: 250px;
+	/* Adjust as needed for your design */
+  }
+  #about-me h2 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+  }
+  #about-me p {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+  }
+  #about-me a.btn {
+	margin-top: 1rem;
+  }
+  
+  /*
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   * LINKS SECTION
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  #links {
+	padding: 60px 0;
+	background-color: #ffffff;
+  }
+  #links h2 {
+	font-weight: bold;
+	margin-bottom: 1rem;
+  }
+  #links p {
+	margin-bottom: 2rem;
+  }
+  #links .btn {
+	margin-bottom: 1rem;
+  }
+  
+  /*
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   * FOOTER
+   * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   */
+  #site-footer {
+	width: 100%;
+	background: #101020;
+	padding: 20px 0;
+	text-align: center;
+  }
+  .footer-content {
 	color: #85898c;
-}
-.side-page-content a:hover, .side-page-content a:focus {
-	color: #bdc0c1;
-}
-
-.side-page-content p {
-	color: #bdc0c1;
 	font-size: 0.9rem;
-}
-
-/*
-Tips:
-
-Responsive case - media queries
-
-@media screen and (max-width:34em {...
-*/
+  }
+  .footer-content a {
+	color: #85898c;
+  }
+  .footer-content a:hover {
+	color: #bdc0c1;
+  }
+  
