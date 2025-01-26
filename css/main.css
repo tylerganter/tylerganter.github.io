@@ -3,146 +3,202 @@
  * GENERAL RESET / BODY STYLES
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
- body {
-	margin: 0;
-	padding: 0;
-	font-family: "Andale Mono", "Courier New", monospace;
-	color: #101020;
-	background-color: #ffffff;
-  }
-  h1, h2, h3, p {
-	margin-top: 0;
-	margin-bottom: 1rem;
-  }
-  a {
-	text-decoration: none;
-  }
-  
-  /*
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Andale Mono", "Courier New", monospace;
+  color: #101020;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    * NAVBAR
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
-  #site-navbar {
-	background: #101020;
-  }
-  .navbar-brand img {
-	max-width: 48px;
-  }
-  .navbar-nav .nav-link {
-	color: #f0f0f0;
-  }
-  .navbar-nav .nav-link:hover {
-	color: #cccccc;
-  }
-  
-  /*
+#site-navbar {
+  background: #101020;
+}
+
+.navbar-brand img {
+  max-width: 48px;
+}
+
+.navbar-nav .nav-link {
+  color: #f0f0f0;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #cccccc;
+}
+
+/*
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    * INTRO SECTION
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
-  #intro {
-	background: #101020 url("../static/images/harmonic_pitch_alpha.png") no-repeat;
-	background-size: cover;
-	background-position: left bottom;
-	width: 100%;
-	height: 720px; /* Or auto/100vh to be more responsive */
-	display: table;
-	position: relative;
-	text-align: center;
-	overflow: hidden;
-  }
-  .intro-content {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	color: white;
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
-  }
-  .intro-content h1 {
-	font-size: 4rem;
-	line-height: 1.2;
-	margin-bottom: 0.6rem;
-  }
-  #intro-content-wrapper {
-	opacity: 0.0; /* fade in from 0 to 1 */
-  }
-  #animation {
-	background: url("../static/images/empty.png") no-repeat;
-	background-size: 100% 100%;
-	background-position: center;
-  }
-  
-  /*
+#intro {
+  background: #101020 url("../static/images/harmonic_pitch_alpha.png") no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  width: 100%;
+  height: 720px;
+  /* Or auto/100vh to be more responsive */
+  display: table;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  text-shadow:
+    /* Right-shifted shadows */
+    /* Mid-range blast radius */
+    40px 0 100px rgba(0, 0, 0, 1),
+    /* Long-range nuclear glow */
+    40px 0 200px rgba(0, 0, 0, 1),
+    /* Extreme distance explosion */
+    40px 0 300px rgba(0, 0, 0, 1),
+    /* Atmospheric entry burn */
+    40px 0 500px rgba(0, 0, 0, 1),
+    /* Breaking the space-time continuum */
+    40px 0 500px rgba(0, 0, 0, 1),
+
+    /* Left-shifted shadows */
+    /* Mid-range blast radius */
+    -40px 0 100px rgba(0, 0, 0, 1),
+    /* Long-range nuclear glow */
+    -40px 0 200px rgba(0, 0, 0, 1),
+    /* Extreme distance explosion */
+    -40px 0 300px rgba(0, 0, 0, 1),
+    /* Atmospheric entry burn */
+    -40px 0 500px rgba(0, 0, 0, 1),
+    /* Breaking the space-time continuum */
+    -40px 0 500px rgba(0, 0, 0, 1);
+}
+
+.intro-content h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+  /* font-weight: 700 !important; */
+}
+
+/* .intro-content p {
+  font-weight: 700 !important;
+} */
+
+#intro-content-wrapper {
+  opacity: 0.0;
+  /* fade in from 0 to 1 */
+}
+
+#animation {
+  background: url("../static/images/empty.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+/*
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    * ABOUT SECTION
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
-  #about {
-	padding: 60px 0;
-	background-color: #f7f7f7; /* Light background for contrast */
-  }
-  .about-content {
-	color: #101020;
-	font-weight: normal;
-  }
-  #headshot {
-	max-width: 250px;
-	/* Adjust as needed for your design */
-  }
-  #about-me h2 {
-	font-weight: bold;
-	margin-bottom: 1rem;
-  }
-  #about-me p {
-	font-size: 1rem;
-	margin-bottom: 1rem;
-  }
-  #about-me a.btn {
-	margin-top: 1rem;
-  }
-  
-  /*
+#about {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+  /* Light background for contrast */
+}
+
+.about-content {
+  color: #101020;
+  font-weight: normal;
+}
+
+#headshot {
+  max-width: 250px;
+  /* Adjust as needed for your design */
+}
+
+#about-me h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#about-me p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#about-me a.btn {
+  margin-top: 1rem;
+}
+
+/*
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    * LINKS SECTION
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
-  #links {
-	padding: 60px 0;
-	background-color: #ffffff;
-  }
-  #links h2 {
-	font-weight: bold;
-	margin-bottom: 1rem;
-  }
-  #links p {
-	margin-bottom: 2rem;
-  }
-  #links .btn {
-	margin-bottom: 1rem;
-  }
-  
-  /*
+#links {
+  padding: 60px 0;
+  background-color: #ffffff;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url("../static/images/castle_valley_small.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative; */
+}
+
+#links h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#links p {
+  margin-bottom: 2rem;
+}
+
+#links .btn {
+  margin-bottom: 1rem;
+}
+
+/*
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    * FOOTER
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
-  #site-footer {
-	width: 100%;
-	background: #101020;
-	padding: 20px 0;
-	text-align: center;
-  }
-  .footer-content {
-	color: #85898c;
-	font-size: 0.9rem;
-  }
-  .footer-content a {
-	color: #85898c;
-  }
-  .footer-content a:hover {
-	color: #bdc0c1;
-  }
-  
+#site-footer {
+  width: 100%;
+  background: #101020;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  color: #85898c;
+  font-size: 0.9rem;
+}
+
+.footer-content a {
+  color: #85898c;
+}
+
+.footer-content a:hover {
+  color: #bdc0c1;
+}
