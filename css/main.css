@@ -68,7 +68,7 @@ a {
   text-align: center;
   color: white;
   font-size: 1.5rem;
-	font-weight: bold;
+  font-weight: bold;
   text-shadow:
     3px 3px 10px rgba(0, 0, 0, 1),
     /* Mid-range blast radius */
@@ -138,6 +138,10 @@ a {
 
 #about-me a.btn {
   margin-top: 1rem;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -147,24 +151,64 @@ a {
    */
 #links {
   padding: 60px 0;
-  background-color: #ffffff;
-  /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
     url("../static/images/castle_valley_small.jpg") no-repeat center center;
   background-size: cover;
-  position: relative; */
+  position: relative;
 }
 
 #links h2 {
   font-weight: bold;
   margin-bottom: 1rem;
+  color: #101020;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
 #links p {
   margin-bottom: 2rem;
+  color: #101020;
+  font-weight: 500;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
 }
 
 #links .btn {
   margin-bottom: 1rem;
+  padding: 8px 16px;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#links .btn-primary {
+  background-color: #2962ff;
+  border: none;
+}
+
+#links .btn-primary:hover {
+  background-color: #1e4bd8;
+  transform: translateY(-2px);
+}
+
+#links .btn-outline-dark {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #101020;
+}
+
+#links .btn-outline-dark:hover {
+  background-color: rgba(32, 32, 48, 0.7);
+  color: white;
+  transform: translateY(-2px);
+}
+
+#links .btn-outline-secondary {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid #6c757d;
+}
+
+#links .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+  transform: translateY(-2px);
 }
 
 /*
