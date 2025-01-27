@@ -111,19 +111,23 @@ a {
    * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
    */
 #about {
-  padding: 60px 0;
+  padding: 3rem 1rem;
   background-color: #f7f7f7;
-  /* Light background for contrast */
 }
 
 .about-content {
   color: #101020;
-  font-weight: normal;
 }
 
 #headshot {
   max-width: 250px;
-  /* Adjust as needed for your design */
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+#about-me {
+  padding: 0 1rem;
 }
 
 #about-me h2 {
@@ -133,15 +137,37 @@ a {
 
 #about-me p {
   font-size: 1rem;
+  line-height: 1.6;
   margin-bottom: 1rem;
+  word-wrap: break-word;
 }
 
-#about-me a.btn {
-  margin-top: 1rem;
+#about-me .btn {
   display: block;
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
+}
+
+/* Medium screen adjustments */
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-content .row {
+    flex-direction: column;
+  }
+
+  .about-content .col-md-4,
+  .about-content .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  #headshot {
+    max-width: 200px;
+  }
+
+  #about-me {
+    text-align: center;
+    padding: 0 2rem;
+  }
 }
 
 /*
