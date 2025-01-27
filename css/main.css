@@ -54,7 +54,7 @@ a {
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 #intro {
-  background: #101020 url("../static/images/harmonic_pitch_alpha.png") no-repeat;
+  background: #101020 url("../static/images/harmonic_pitch_alpha_small.png") no-repeat;
   background-size: cover;
   background-position: left bottom;
   width: 100%;
