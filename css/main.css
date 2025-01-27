@@ -120,10 +120,14 @@ a {
 }
 
 #headshot {
-  max-width: 250px;
-  width: 100%;
-  height: auto;
+  width: 250px;         /* fixed width for a consistent circle */
+  height: 250px;        /* fixed height matches width */
+  border-radius: 50%;   /* make it circular */
+  object-fit: cover;    /* ensure the image fills the circle */
+  object-position: top; /* align cropping to the top of the image */
   margin-bottom: 2rem;
+  display: block;       /* keeps alignment predictable */
+  margin: 0 auto 2rem;  /* centers the image (optional) */
 }
 
 #about-me {
