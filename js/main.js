@@ -17,7 +17,7 @@ function setIntroHeight() {
 
 // Animate the harmonic pitch image to swipe in from 100% to 0% width
 function swipeSquiggles() {
-  const duration = 1500;
+  const duration = 2000;
   const start = performance.now();
 
   function frame(now) {
