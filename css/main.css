@@ -63,7 +63,7 @@ a {
   background-size: cover;
   background-position: left bottom;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: table;
   /* If you prefer Bootstrap utilities, use .d-flex and .align-items-center in HTML */
   position: relative;

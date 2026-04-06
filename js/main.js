@@ -11,8 +11,10 @@ function setIntroHeight() {
     document.documentElement.clientHeight ||
     document.body.clientHeight;
   const headerHeight = document.querySelector("header").offsetHeight;
-  document.querySelector("#intro").style.height =
-    windowHeight - headerHeight + "px";
+  const intro = document.querySelector("#intro");
+  const h = windowHeight - headerHeight + "px";
+  intro.style.height = h;
+  intro.style.minHeight = h;
 }
 
 // Animate the harmonic pitch image to swipe in from 100% to 0% width
