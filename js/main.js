@@ -23,8 +23,8 @@ function swipeSquiggles() {
   function frame(now) {
     const elapsed = now - start;
     const t = Math.min(elapsed / duration, 1);
-    // ease-out cubic: fast start, gentle landing
-    const eased = 1 - Math.pow(1 - t, 3);
+    // ease-out quadratic
+    const eased = 1 - Math.pow(1 - t, 2);
 
     const widthPercent = 100 * (1 - eased);
     document.querySelector("#animation").style.backgroundSize =
