@@ -1,36 +1,40 @@
 function onLoad() {
-	setIntroHeight();
-	swipeSquiggles();
-	// Additional init code here if needed
+  setIntroHeight();
+  swipeSquiggles();
+  // Additional init code here if needed
 }
 
 // Dynamically sets the intro section to fill the viewport minus navbar height
 function setIntroHeight() {
-	const windowHeight = window.innerHeight
-		|| document.documentElement.clientHeight
-		|| document.body.clientHeight;
-	const headerHeight = document.querySelector("header").offsetHeight;
-	document.querySelector("#intro").style.height = (windowHeight - headerHeight) + "px";
+  const windowHeight =
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight;
+  const headerHeight = document.querySelector("header").offsetHeight;
+  document.querySelector("#intro").style.height =
+    windowHeight - headerHeight + "px";
 }
 
 // Animate the harmonic pitch image to swipe in from 100% to 0% width
 function swipeSquiggles() {
-	let widthPercent = 100;
-	const id = setInterval(frame, 15);
+  const duration = 1500;
+  const start = performance.now();
 
-	function frame() {
-		if (widthPercent < 0) {
-			clearInterval(id);
-		} else {
-			// Update background-size
-			document.querySelector("#animation").style.backgroundSize = widthPercent + "% 100%";
-			widthPercent--;
+  function frame(now) {
+    const elapsed = now - start;
+    const t = Math.min(elapsed / duration, 1);
+    // ease-out cubic: fast start, gentle landing
+    const eased = 1 - Math.pow(1 - t, 3);
 
-			// Fade in text from 0 to 1 as background goes
-			const fadeValue = 1.0 - Math.sqrt(widthPercent / 100);
-			document.querySelector("#intro-content-wrapper").style.opacity = fadeValue;
-		}
-	}
+    const widthPercent = 100 * (1 - eased);
+    document.querySelector("#animation").style.backgroundSize =
+      widthPercent + "% 100%";
+    document.querySelector("#intro-content-wrapper").style.opacity = eased;
+
+    if (t < 1) requestAnimationFrame(frame);
+  }
+
+  requestAnimationFrame(frame);
 }
 
 // Optional: adjust on window resize
